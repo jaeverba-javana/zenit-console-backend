@@ -1,0 +1,3 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://jaeverba-javana@bitbucket.org/javiervergara1/zenit-console-frontend.git
