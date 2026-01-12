@@ -1,6 +1,6 @@
 {
-    "ai-commit.OPENAI_BASE_URL": "https://api.perplexity.ai",
+	"ai-commit.OPENAI_BASE_URL": "https://api.perplexity.ai",
 	"ai-commit.OPENAI_MODEL": "sonar-pro",
-	"ai-commit.OPENAI_API_KEY": "",
 	"ai-commit.OPENAI_TEMPERATURE": 0.8,
+	"deno.enable": true,
 }

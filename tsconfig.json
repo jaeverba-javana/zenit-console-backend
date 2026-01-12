@@ -1,0 +1,18 @@
+{
+	"extends": "@tsconfig/node24/tsconfig.json",
+	"compilerOptions": {
+		"noEmit": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		// "target": "ES2024",
+		// "strictNullChecks": true,
+		// "strictFunctionTypes": true,
+		// "strict": true,
+		// "sourceMap": true
+	},
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*",
+		"frontend/",
+	]
+}

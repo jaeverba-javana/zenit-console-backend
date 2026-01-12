@@ -1,8 +1,17 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "OTEL_DENO=true deno run --allow-env --allow-read --allow-ffi --allow-run --allow-write --allow-sys --allow-net --unstable-otel main.ts"
   },
   "imports": {
-    "@std/assert": "jsr:@std/assert@1"
-  }
+    "@opentelemetry/api": "npm:@opentelemetry/api@^1.9.0",
+    "@std/assert": "jsr:@std/assert@1",
+    "compression": "npm:compression@^1.8.1",
+    "express": "npm:express@^5.2.1",
+    "sirv": "npm:sirv@^3.0.2",
+    "vite": "npm:vite@^7.3.1"
+  },
+  "workspace": [
+    "./frontend"
+  ],
+  "nodeModulesDir": "auto"
 }

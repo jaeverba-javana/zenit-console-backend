@@ -1,8 +1,7 @@
-export function add(a: number, b: number): number {
-  return a + b;
-}
+import { PORT } from './utils/constants.ts';
 
-// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
-if (import.meta.main) {
-  console.log("Add 2 + 3 =", add(2, 3));
-}
+const server = (await import('./server.ts')).default;
+
+server.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
+});

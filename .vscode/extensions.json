@@ -1,3 +1,7 @@
 {
-  "recommendations": ["denoland.vscode-deno", "sitoi.ai-commit", "PKief.material-icon-theme"]
+	"recommendations": [
+		"denoland.vscode-deno",
+		"sitoi.ai-commit",
+		"PKief.material-icon-theme"
+	]
 }
